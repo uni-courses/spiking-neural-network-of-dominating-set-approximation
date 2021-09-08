@@ -7,7 +7,6 @@ It will compile the latex report of this project to pdf.
 import argparse
 
 from code.src.main import (
-    compile_latex_report,
     dominating_set_snn,
     dominating_set_neumann,
 )
@@ -17,12 +16,6 @@ import networkx as nx
 import pickle
 
 parser = argparse.ArgumentParser()
-parser.add_argument(
-    "--compile_report",
-    dest="compile_report",
-    action="store_true",
-    help="boolean flag, determines whether the notebook will be compiled",
-)
 parser.add_argument(
     "--n",
     dest="neumann",
@@ -47,7 +40,6 @@ parser.add_argument(
 parser.add_argument("infile", nargs="?", type=argparse.FileType("r"))
 
 parser.set_defaults(
-    compile_report=False,
     k=10,
     infile=None,
     neumann=False,
@@ -85,6 +77,3 @@ if args.graph_from_file:
 
 if args.infile:
     args.infile.close()
-
-if args.compile_report:
-    compile_latex_report()

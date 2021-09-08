@@ -3,32 +3,14 @@
 # include new packages: conda env update --file environment.yml
 name: neumo
 channels:
-  - conda-forge
-  - conda
+  - defaults
 dependencies:
-- python=3.6
-- anaconda
-- nb_conda
-- conda:
+  - python=3.6
   - numpy>=1.19
   - pytest>=3.0,<3.8
   - pytest-cov
-  - notebook
-  - jupyter
   - networkx
-  - nbconvert
   - matplotlib
-  - ipykernel
-  - python-igraph
-- pip
-- pip:
-  # works for regular pip packages
-  - pdflatex
-  - testbook
-  - pyment
-  - pdoc3
-  - pyhamcrest
-  - python-igraph
-  - igraph
-  - black
-  - codecov
+  - pip
+  - pip:
+    - black

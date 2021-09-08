@@ -35,7 +35,7 @@ Navigate to the directory of this repository, you should execute the following i
 python -m code.src
 ```
 
-5. If you want to perform the algorithm on the [pickled example graph](https://networkx.org/documentation/stable/reference/readwrite/graphml.html), use:
+5. If you want to perform the algorithm on the [example graph](https://networkx.org/documentation/stable/reference/readwrite/graphml.html), use:
 ```
 python -m code.src ./examples/examplegraph
 ```
@@ -49,8 +49,7 @@ python -m pytest
 from the root directory of this project.
 
 ## Documentation
-The docstring documentation (template) was generated using `pyment`. The HTML documentation of the code was 
-generated using `pdoc`.
+The docstring documentation (template) was generated using `pyment`.
 
 <!-- Un-wrapped URL's below (Mostly for Badges) -->
 [black_badge]: https://img.shields.io/badge/code%20style-black-000000.svg

@@ -1,6 +1,14 @@
 from code.src.common_operations import spiking_max, spiking_degree
 from code.src.algorithm2_snn import spiking_update
-from code.src.algorithm1_snn import *
+from code.src.algorithm1_snn import (
+    nonspiking_to_integer,
+    spiking_max_degree,
+    nonspiking_log,
+    spiking_multiplication,
+    spiking_minimum,
+    spiking_sampling,
+    spiking_summation,
+)
 
 import networkx as nx
 import numpy as np
@@ -10,14 +18,13 @@ import pickle
 
 import multiprocessing as mp
 
+
 def my_func(inp):
     (n, k) = inp
     spikes_list_temp = []
     spikes_voltage_list_temp = []
     for p in np.linspace(0.5, 1, 2):  # probability of edge creation
-        for seed in range(
-            0, 2
-        ):  # random seed to get the same random graph for testing
+        for seed in range(0, 2):  # random seed to get the same random graph for testing
             graph = nx.fast_gnp_random_graph(n, p, seed=seed)
             if nx.is_connected(graph):
                 spikes, spikes_voltage = energy_analysis_manual_graph(graph, k)
@@ -25,9 +32,10 @@ def my_func(inp):
                 spikes_voltage_list_temp.append(spikes_voltage)
     return (n, k, spikes_list_temp, spikes_voltage_list_temp)
 
+
 def findelement(x, n, k):
     for e in x:
-        if e[0]==n and e[1]==k:
+        if e[0] == n and e[1] == k:
             return e
 
 
@@ -37,10 +45,10 @@ def energy_analysis_random_graphs():
     spikes_list = np.zeros((len(k_list), len(n_list)))
     spikes_voltage_list = np.zeros((len(k_list), len(n_list)))
 
-    [(n,k) for n in n_list for k in k_list]
+    [(n, k) for n in n_list for k in k_list]
 
     pool = mp.Pool(mp.cpu_count())
-    result = pool.map(my_func, [(n,k) for n in n_list for k in k_list])
+    result = pool.map(my_func, [(n, k) for n in n_list for k in k_list])
 
     for x, n in enumerate(n_list):
         for y, k in enumerate(k_list):

@@ -1,16 +1,7 @@
-from code.src.compile_latex import Compile_latex
 from code.src.algorithm1_snn import algorithm1 as algorithm1_snn
 from code.src.algorithm2_snn import algorithm2 as algorithm2_snn
 from code.src.algorithm1_neumann import algorithm1 as algorithm1_neumann
 from code.src.algorithm2_neumann import algorithm2 as algorithm2_neumann
-
-
-def compile_latex_report():
-    """
-    compiles latex code to pdf
-
-    """
-    Compile_latex("main.tex")
 
 
 def dominating_set_snn(graph=None, k=10):
