@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="xds" attr.type="int" for="node" id="d5" />
+  <key attr.name="p" attr.type="int" for="node" id="d4" />
+  <key attr.name="delta_two" attr.type="int" for="node" id="d3" />
+  <key attr.name="dynamic_degree" attr.type="int" for="node" id="d2" />
+  <key attr.name="color" attr.type="string" for="node" id="d1" />
+  <key attr.name="x" attr.type="int" for="node" id="d0" />
+  <graph edgedefault="undirected">
+    <node id="a">
+      <data key="d0">0</data>
+      <data key="d1">w</data>
+      <data key="d2">0</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="b">
+      <data key="d0">0</data>
+      <data key="d1">w</data>
+      <data key="d2">0</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="c">
+      <data key="d0">0</data>
+      <data key="d1">w</data>
+      <data key="d2">0</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="d">
+      <data key="d0">0</data>
+      <data key="d1">w</data>
+      <data key="d2">0</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="e">
+      <data key="d0">0</data>
+      <data key="d1">w</data>
+      <data key="d2">0</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="f">
+      <data key="d0">0</data>
+      <data key="d1">w</data>
+      <data key="d2">0</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="g">
+      <data key="d0">0</data>
+      <data key="d1">w</data>
+      <data key="d2">0</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">0</data>
+    </node>
+    <edge source="a" target="b" />
+    <edge source="a" target="c" />
+    <edge source="b" target="c" />
+    <edge source="b" target="d" />
+    <edge source="b" target="e" />
+    <edge source="b" target="f" />
+    <edge source="c" target="d" />
+    <edge source="d" target="e" />
+    <edge source="f" target="g" />
+  </graph>
+</graphml>
