@@ -1,10 +1,14 @@
-# Spiking Neural Network Implementation Of Minimum Dominating Set Approximation
+# Implementation of a Distributed Minimum Dominating Set Approximation Algorithm in a Spiking Neural Network
 [![Python 3.8][python_badge]](https://www.python.org/downloads/release/python-382/)
 [![License: GPL v3](https://img.shields.io/badge/License-AGPLv3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Code Style: Black][black_badge]](https://github.com/ambv/black)
 
 ## Abstract
 Neuromorphic computing is a promising new computational paradigm that may provide energy-lean solutions to algorithmic challenges such as graph problems. In particular, the class of distributed algorithms may benefit from translation to spiking neural networks. This work presents such a translation of a distributed approximation algorithm for the minimum dominating set problem, as described by Kuhn and Wattenhofer (2005), to a spiking neural network. This translation shows that neuromorphic architectures can be used to implement distributed algorithms. Subcomponents of this implementation, such as the calculation of the minimum or maximum of two numbers and degree of a node, can be reused as foundational building blocks for other (graph) algorithms. This work illustrates how leveraging neural properties for the translation of traditional algorithms relies on novel insights, thereby contributing to a growing body of knowledge on neuromorphic applications for scientific computing.
+
+##### Authors: Victoria Bosch, Arne Diehl, Akke Toeter, Daphne Smits and Johan Kwisthout.   
+##### Affiliation: School for Artificial Intelligence, Radboud University and Donders Center for Cognition, Radboud University.        
+##### The journal paper can be accessed at: [TBD]
 
 ## Usage: do once
 
