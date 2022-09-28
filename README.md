@@ -8,7 +8,7 @@ Neuromorphic computing is a promising new computational paradigm that may provid
 
 ##### Authors: Victoria Bosch, Arne Diehl, Akke Toeter, Daphne Smits and Johan Kwisthout.   
 ##### Affiliation: School for Artificial Intelligence, Radboud University and Donders Center for Cognition, Radboud University.        
-##### The journal paper can be accessed at: [TBD]
+##### The paper can be found in the proceedings of BNAIC 2021 at: https://doi.org/10993/48924
 
 ## Usage: do once
 
